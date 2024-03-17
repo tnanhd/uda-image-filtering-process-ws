@@ -30,6 +30,33 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "Get filtered image elb",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://uda-image-filtering-process-ws-dev.us-east-1.elasticbeanstalk.com/filteredimage?image_url=https://upload.wikimedia.org/wikipedia/commons/b/bd/Golden_tabby_and_white_kitten_n01.jpg",
+					"protocol": "http",
+					"host": [
+						"uda-image-filtering-process-ws-dev",
+						"us-east-1",
+						"elasticbeanstalk",
+						"com"
+					],
+					"path": [
+						"filteredimage"
+					],
+					"query": [
+						{
+							"key": "image_url",
+							"value": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Golden_tabby_and_white_kitten_n01.jpg"
+						}
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }

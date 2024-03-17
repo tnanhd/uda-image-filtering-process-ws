@@ -21,11 +21,25 @@ Successful URL responses should have a 200 code. Ensure that you include error c
 
 ### Local version
 
-Run the project locally, import the Postman collection file `./Image Processing WS.postman_collection.json`, and run the request `Get filtered image local`.
+Run the project locally, import the Postman collection file [Image_Processing_WS](Image_Processing_WS.postman_collection.json), and run the request `Get filtered image local`.
 
 ### AWS version
 
-TBD
+Domain: uda-image-filtering-process-ws-dev.us-east-1.elasticbeanstalk.com
+
+Run the request `Get filtered image elb` in Postman.
+
+### Curl command
+
+You can run curl command as below:
+
+```sh
+curl --location 'http://localhost:8080/filteredimage?image_url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fb%2Fbd%2FGolden_tabby_and_white_kitten_n01.jpg'
+```
+
+```sh
+curl --location 'http://uda-image-filtering-process-ws-dev.us-east-1.elasticbeanstalk.com/filteredimage?image_url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fb%2Fbd%2FGolden_tabby_and_white_kitten_n01.jpg'
+```
 
 ## License
 

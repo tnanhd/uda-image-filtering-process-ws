@@ -23,3 +23,7 @@ Thumbs.db
 
 # Ignore tmp directory
 tmp/
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
